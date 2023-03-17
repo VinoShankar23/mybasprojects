@@ -1,0 +1,20 @@
+<mvc:View controllerName="com.mit.mit.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
+    xmlns="sap.m">
+    <Page showHeader="true" title="Machine Inspection Tool" titleAlignment="Center" showFooter="true" showNavButton="false">
+        <content>
+            <FlexBox alignItems="Center" justifyContent="Center" direction="Column">
+                <Image src="images/MITIMG1.png" backgroundSize = "cover" height="600px" width="596px" visible="true" class="sapUiLargeMarginTop sapUiTinyMarginBottom sapUiMediumMarginBegin sapUiSmallMarginEnd"/>            
+                <Button  text="LOGIN" class="sapUiLargeMarginTop" type="Emphasized" icon="sap-icon://arrow-right" iconFirst="true" width="262px" enabled="true" visible="true"  press="onLoginPress"/>
+            </FlexBox>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true" class="sapUiTinyMarginBottom">
+                <content>
+                    <Text text="Gyansys Inc. 2023" width="310px" maxLines="1" wrapping="true" textAlign="End" textDirection="RTL" visible="true"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

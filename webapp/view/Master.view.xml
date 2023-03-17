@@ -1,0 +1,283 @@
+<mvc:View controllerName="com.mit.mit.controller.Master"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:core="sap.ui.core"
+    xmlns:u="sap.ui.unified"
+    xmlns:l = "sap.ui.layout"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Page showHeader="true" title="Machine Inspection Details" titleAlignment="Center" showFooter="true" showNavButton="true" navButtonPress="onNavBack">
+        
+        <headerContent>
+            <Button text="" type="Reject" icon="sap-icon://log" ariaHasPopup="Dialog" iconFirst="true" width="46px" enabled="true" visible="true" tooltip="Logout" iconDensityAware="false" press="onLogPress"/>
+        </headerContent>
+        
+        <content>
+        <HBox justifyContent="Center" renderType="Bare">
+        <Carousel height="361px" width="828px" loop="true" showPageIndicator="true" pageIndicatorPlacement="Bottom" visible="true" class="sapUiContentPadding">
+            <pages>
+                <Image src="images/Machine 1.png" height="566px" width="750px" visible="true" densityAware="false"/>
+                <Image src="images/Machine 2.png" height="732.00000000px" width="732.00000000px" visible="true" densityAware="false"/>
+                <Image src="images/Machine 3.png" height="294px" width="715.484375px" visible="true" densityAware="false"/>
+            </pages>
+        </Carousel>
+        </HBox>
+
+
+        <IconTabBar
+		id="idIconTabBarMulti"
+		expanded="false"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter icon="sap-icon://hint" text = "Details">
+                <content>
+                                            <Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+                                                <infoToolbar/>
+                                                <headerToolbar/>
+                                                <columns>
+                                                    <Column width="auto" hAlign="Center" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                        <header>
+                                                            <Text text="Attributes" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </header>
+                                                        <footer/>
+                                                    </Column>
+                                                    <Column width="auto" hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                        <header>
+                                                            <Text text="Value" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </header>
+                                                        <footer/>
+                                                    </Column>
+                                                </columns>
+                                                <items>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Serial No" text="" titleActive="false" visible="true"/>
+                                                            <Text text="89765432" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Machine Name" text="" titleActive="false" visible="true"/>
+                                                            <Text text="Centrifuge" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Manufacturer" text="" titleActive="false" visible="true"/>
+                                                            <Text text="Bharat Electronics Limited (BEL)" width="auto" maxLines="1" wrapping="false" textAlign="End" textDirection="Inherit" visible="true"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Model No" text="" titleActive="false" visible="true"/>
+                                                            <Text text="CENZA23100" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Upcoming Ovehaul date" text="" titleActive="false" visible="true"/>
+                                                            <Text text="2nd Marc 2023" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Installed By" text="" titleActive="false" visible="true"/>
+                                                            <Text text="PSN Engineering Pvt Ltd" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Dimensions" text="" titleActive="false" visible="true"/>
+                                                            <Text text="220cm x 120cm x 220cm" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Insurance" text="" titleActive="false" visible="true"/>
+                                                            <Text text="Active till sep 2024" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Manufactured Date" text="" titleActive="false" visible="true"/>
+                                                            <Text text="24 January 2012" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Made In" text="" titleActive="false" visible="true"/>
+                                                            <Text text="India" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                </items>
+                                            </Table>
+                                        </content>
+			</IconTabFilter><IconTabSeparator icon="sap-icon://open-command-field" />
+
+			
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <IconTabFilter icon="sap-icon://inspection"  text = "Inspection">
+                <content>
+                                            <Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" class="sapUiResponsiveMargin">
+                                                <infoToolbar>
+                                                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                                        <content>
+                                                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </content>
+                                                    </Toolbar>
+                                                </infoToolbar>
+                                                <headerToolbar/>
+                                                <columns>
+                                                    <Column width="auto" hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                        <header>
+                                                            <Text text="Inspection" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </header>
+                                                        <footer/>
+                                                    </Column>
+                                                    <Column width="auto" hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                        <header>
+                                                            <Text text="Check" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </header>
+                                                        <footer/>
+                                                    </Column>
+                                                    <Column width="auto" hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                                                        <header>
+                                                            <Text text="Comments" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </header>
+                                                        <footer/>
+                                                    </Column>
+                                                </columns>
+                                                <items>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Temperature" text="" titleActive="false" visible="true"/>
+                                                            <CheckBox text="" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                                                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Sound/Vibration" text="" titleActive="false" visible="true"/>
+                                                            <CheckBox text="" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                                                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Oil Leak Check" text="" titleActive="false" visible="true"/>
+                                                            <CheckBox text="" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                                                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Yield Check" text="" titleActive="false" visible="true"/>
+                                                            <CheckBox text="" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                                                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Visible Damage" text="" titleActive="false" visible="true"/>
+                                                            <CheckBox text="" selected="false" editable="true" enabled="true" visible="true" width="auto" textDirection="Inherit" wrapping="false" useEntireWidth="true"/>
+                                                            <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="Image of Damage" text="" titleActive="false" visible="true"/>
+                                                           
+                                                            <VBox alignItems="Center" direction="Column" fitContainer="false" width="auto" height="45px" justifyContent="Start" renderType="Div" visible="true" displayInline="false">
+                                                                <items>
+                                                                    	<u:FileUploader
+                                                                            id="fileUploader"
+                                                                            change="onUploadPress"
+                                                                            name="myFileUpload"
+                                                                            uploadUrl="upload/"
+                                                                            tooltip="Upload your file"
+                                                                            />
+                                                                </items>
+                                                            </VBox>
+                                                            <l:Grid class="sapUiMediumMarginTop" content="{imagesModel>/Images}" defaultSpan="L3 M4 S12" id="imageGrid" vSpacing="0.5">
+                                                                <VBox height="">
+                                                                    <layoutData>
+                                                                        <l:GridData span="L3 M6 S12"/>
+                                                                    </layoutData>
+                                                                    <Image class="imgclass" height="135px" id="gridImagesId" press="onImageZoom" src="{imagesModel>Pic}" width="100%"></Image>
+                                                                    <core:HTML
+                                                                        content='&lt;div id="myModal" class="modal"&gt; &lt;span class="close"&gt;X&lt;/span&gt;&lt;img class="modal-content" id="img01"/&gt;&lt;div id="caption"&gt;&lt;/div&gt;&lt;/div&gt;'></core:HTML>
+                                                                </VBox>
+						                                    </l:Grid>
+                                                            <!-- <Button text="Upload File" press="handleUploadPress"/> -->
+                                                        </cells>
+                                                    </ColumnListItem>
+                                                    <ColumnListItem type="Active">
+                                                        <cells>
+                                                            <ObjectIdentifier title="" text="" titleActive="false" visible="false"/>
+                                                            <Button text="Save" type = "Accept" press="handleSave"/>
+                                                            <ObjectIdentifier title="" text="" titleActive="false" visible="false"/>
+                                                            
+                                                        </cells>
+                                                    </ColumnListItem>
+
+                                                </items>
+                                            </Table>
+                                        </content>
+			</IconTabFilter><IconTabSeparator icon="sap-icon://open-command-field" />
+
+
+
+
+
+
+
+
+
+
+			<IconTabFilter icon="sap-icon://work-history"  text = "History">
+			    <Text text="People content goes here ..." />
+                    <List items="" itemPress="onListItemPress">
+                        <items>
+                            <StandardListItem
+                                    title="First Inspection"
+                                    description="Date1" type="Navigation" />
+                            <StandardListItem
+                                    title="Second Inspection(sample)"
+                                    description="Date2" type="Navigation" />
+                            <StandardListItem
+                                    title="Third Inspection(sample)"
+                                    description="Date3" type="Navigation" />
+                        </items>
+                    </List>
+                
+			</IconTabFilter>
+		</items>
+	</IconTabBar>
+</content> 
+
+
+
+
+
+
+
+
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true" class="sapUiTinyMarginBottom">
+                <content>
+                    <Text text="Gyansys Inc. 2023" width="310px" maxLines="1" wrapping="true" textAlign="End" textDirection="RTL" visible="true"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

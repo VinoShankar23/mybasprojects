@@ -1,0 +1,27 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog id="historyFrag" title="History of Inspections" class="sapUiSizeCompact">
+		<content>
+			<VBox justifyContent="Center" alignItems="Center" fitContainer="True">
+				<f:SimpleForm id="idSimple" editable="true">
+					<Label id="Label1" text="Temperature"></Label>
+					<Text  text="sample" ></Text>
+
+					<Label id="Label2" text="Sound/Vibration" ></Label>
+					<Text  text="sample" ></Text>
+
+					<Label id="Label3" text="Oil Leak Check"></Label>
+					<Text  text = "sample" ></Text>
+
+					<Label id="Label4" text="Yield Check"></Label>
+					<Text  text = "sample"></Text>
+
+                    <Label id="Label5" text="Visible Damage"></Label>
+					<Text  text = "sample" ></Text>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+		<endButton>
+			<Button text="Cancel" tooltip="Cancel" press="onCancelFrag" type="Reject"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

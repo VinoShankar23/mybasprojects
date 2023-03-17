@@ -1,0 +1,7 @@
+/* Enter your custom styles here */
+.imgclass {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2.5px solid black;
+  }

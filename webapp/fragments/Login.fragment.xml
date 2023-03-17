@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<Dialog id="idLogin" title="User Login" titleAlignment="Center" class="sapUiSizeCompact">
+		<content>
+			<VBox justifyContent="Center" alignItems="Center" fitContainer="True">
+				<f:SimpleForm id="idSimpleLogin" editable="true">
+					<Label text= "UserName" required="true" ></Label>
+							<Input id= "idUser" placeholder="username" />
+							<Label text= "PassWord" required="true"></Label>
+							<Input id= "idPass" placeholder="password" type="Password" />
+							<Button text= "Login" press="onLogin" width="13rem" type="Emphasized"></Button>
+				</f:SimpleForm>
+			</VBox>
+		</content>
+		<endButton>
+			<Button text="Cancel" tooltip="Cancel" press="onCancelFrag" type="Reject"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

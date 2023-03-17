@@ -1,0 +1,29 @@
+<mvc:View controllerName="com.mit.mit.controller.Scan"
+xmlns:mvc="sap.ui.core.mvc" 
+displayBlock="true"  
+xmlns="sap.m"
+xmlns:ndc="sap.ndc">
+<Page id="page" title="BarCode Scanning" titleAlignment="Center" showFooter="true" showNavButton="false">
+    <content> 
+    <VBox height="50%" alignItems="Center" justifyContent="Center" class="sapUiLargeMarginTop">
+        <HBox id="_IDGenHBox1" >
+            <Input id="getvalue" class="color" placeholder="BarCode" width="370px">
+            </Input>
+            <ndc:BarcodeScannerButton id="sampleBarcodeScannerButton" scanSuccess="onScanSuccess" scanFail="onScanError" inputLiveUpdate="onScanLiveupdate" dialogTitle="Barcode Scanner Button Sample" />
+        </HBox>
+        <Button text="Search" type="Success" icon="sap-icon://search" iconFirst="true" width="129px" enabled="true" visible="true" tooltip="Proceed" iconDensityAware="false" press="onSearch"/>
+       
+    </VBox>
+    </content>
+    <headerContent>
+            <Button text="" ariaHasPopup="Dialog" type="Reject" icon="sap-icon://log" iconFirst="true" width="46px" enabled="true" visible="true" tooltip="Logout" iconDensityAware="false" press="onLogPress"/>
+    </headerContent>
+    <footer>
+    <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true" class="sapUiTinyMarginBottom">
+                <content>
+                    <Text text="Gyansys Inc. 2023" width="310px" maxLines="1" wrapping="true" textAlign="End" textDirection="RTL" visible="true"/>
+                </content>
+    </OverflowToolbar>
+    </footer>
+</Page>
+</mvc:View>
